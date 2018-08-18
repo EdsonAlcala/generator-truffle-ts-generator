@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:EdsonAlcala/generator-package-ts.git"
+    "url": "git@github.com:EdsonAlcala/generator-truffle-ts.git"
   },
   "author": "Edson Alcala <edson_alcala@msn.com>",
   "license": "MIT",
