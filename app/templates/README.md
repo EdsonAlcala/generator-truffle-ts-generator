@@ -1,8 +1,7 @@
-# truffle-ts-boilerplate
-A simple boilerplate to start coding smart contracts with Truffle and Typescript
+# <%= appname %>
 
-### Commands
+<%= description %>
+
+# Commands
 
 > npm run develop
-
-> npm run test:coverage

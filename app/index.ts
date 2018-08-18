@@ -87,6 +87,8 @@ class PackageGenerator extends Generator {
 
     this.fs.copy(this.templatePath('.soliumignore'), this.destinationPath('.soliumignore'));
 
+    this.fs.copy(this.templatePath('.prettierrc'), this.destinationPath('.prettierrc'));
+
     this.fs.copyTpl(this.templatePath('package.json'), this.destinationPath('package.json'), {
       appname: this.appname,
       description: this.description,

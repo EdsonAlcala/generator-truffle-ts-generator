@@ -28,6 +28,7 @@ describe('truffle-ts-generator', () => {
     assert.file(['test']);
     assert.file(['types']);
     assert.file(['.gitignore']);
+    assert.file(['.prettierrc']);
     assert.file(['.solcover.js']);
     assert.file(['.soliumignore']);
     assert.file(['.soliumrc.json']);
