@@ -8,7 +8,7 @@ Be sure you have Yeoman installed
 
 > npm install -g yo
 
-> npm install -g generator-package-generator
+> npm install -g generator-truffle-ts
 
 ### Commands
 

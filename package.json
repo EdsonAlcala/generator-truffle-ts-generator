@@ -1,6 +1,6 @@
 {
   "name": "generator-truffle-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple generator to start coding smart contracts with Truffle and Typescript",
   "main": "app/index.js",
   "scripts": {
