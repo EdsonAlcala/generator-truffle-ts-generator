@@ -1,0 +1,6 @@
+node_modules
+coverage
+test-report.xml
+report-lint.json
+app/sources/*.js
+app/index.js

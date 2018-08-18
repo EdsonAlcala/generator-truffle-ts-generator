@@ -1,0 +1,75 @@
+{
+  "name": "generator-truffle-ts",
+  "version": "0.0.2",
+  "description": "A simple generator to start coding smart contracts with Truffle and Typescript",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "test:ci": "jest",
+    "test:coverage": "npm test -- --coverage",
+    "test:local": "tsc && npm link && yo",
+    "build": "tsc",
+    "tslint:ci": "npm run tslint -- -t json -o report-lint.json",
+    "tslint": "tslint -p . -c tslint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EdsonAlcala/generator-package-ts.git"
+  },
+  "author": "Edson Alcala <edson_alcala@msn.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/glob": "^5.0.35",
+    "@types/jest": "^23.3.1",
+    "@types/mkdirp": "^0.5.2",
+    "@types/node": "^10.5.5",
+    "@types/yeoman-generator": "^2.0.3",
+    "@types/yeoman-test": "^1.7.4",
+    "@types/yosay": "0.0.29",
+    "jest": "^23.4.2",
+    "ts-jest": "^23.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^3.0.1",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^1.9.1"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "yeoman-generator": "^3.1.1",
+    "yosay": "^2.0.2"
+  },
+  "jest": {
+    "testURL": "http://localhost",
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testPathIgnorePatterns": [
+      "app"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
