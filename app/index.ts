@@ -79,7 +79,7 @@ class PackageGenerator extends Generator {
       description: this.description,
     });
 
-    this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));
+    this.fs.copy(this.templatePath('_gitignore'), this.destinationPath('.gitignore'));
 
     this.fs.copy(this.templatePath('.solcover.js'), this.destinationPath('.solcover.js'));
 
