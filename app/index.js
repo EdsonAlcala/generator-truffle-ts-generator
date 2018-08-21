@@ -91,7 +91,7 @@ class PackageGenerator extends yeoman_generator_1.default {
                 appname: this.appname,
                 description: this.description,
             });
-            this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));
+            this.fs.copy(this.templatePath('_gitignore'), this.destinationPath('.gitignore'));
             this.fs.copy(this.templatePath('.solcover.js'), this.destinationPath('.solcover.js'));
             this.fs.copy(this.templatePath('.soliumrc.json'), this.destinationPath('.soliumrc.json'));
             this.fs.copy(this.templatePath('.soliumignore'), this.destinationPath('.soliumignore'));
